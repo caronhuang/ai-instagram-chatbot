@@ -5,7 +5,7 @@
 Preparation
 ---
 
-- ManyChat :  (Paid service, $15/month)
+- ManyChat  (Paid service, $15/month)
 - Make.com 
 - OpenAI GPT-4 API (Paid service, Minimum $5/time)
 - Instagram business account (Must be linked to its Facebook fan page due to Instagram messenger function is linked to Facebook)
@@ -20,8 +20,8 @@ Flowchart
 Feature Discription
 ---
 - User sends a message on Instagram
-- ManyChat triggers a webhook to Make
-- Make sends the message to OpenAI GPT-4 API
+- ManyChat triggers a webhook to Make.com
+- Make.com sends the message to OpenAI GPT-4 API
 - OpenAI returns a response
-- Make updates the user's Custom Field(in this case, {{ai_reply}}) in ManyChat
-- ManyChat sends the response back to the user
+- Make updates the user's Custom Field. In this case, {{ai_reply}} in ManyChat
+- ManyChat sends the response back to the user from Instagram message inbox
