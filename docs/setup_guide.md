@@ -11,19 +11,20 @@ Generate an API key and keep it. (You can save it in a .env file (do not commit 
 
 🧠 Step 2: Setup ManyChat
 
-Create a Custom Field
+0. Create a Custom Field
 > In ManyChat > Settings > Custom Fields:
 > Add a new Text field named: `ai_reply`
 
 ❗ Do NOT create a field called `field_name` or `field_value`.
 These are JSON parameter keys, not variables in ManyChat.
 
-Make an external request to make.com
+1. Add a trigger →  **User sends a direct message** or **User sends a message** , depending on what criteria you want to trigger a workflow
+2. Make an external request to make.com
 
-Smart delay 
+3. Smart delay 
 > ManyChat will not wait for Make.com runs all modules til complete, it will execute along the workflow itself → if we don't add 「Delay」process, it is likely to send out a blank due to make.com has not yet updated a value to `ai_reply`. Delay second is subject to the minimum requirement. Now is 10 sec.
 
-Instagram →  send message
+4. Instagram →  send message
 > `ai_reply`
 
 ---
